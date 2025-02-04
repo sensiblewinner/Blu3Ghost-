@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo - Fun & Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎉 Welcome to Bingo! 🎨</h1>
+        <p>Fun and Learning for Kids!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#fun-facts">Fun Facts</a></li>
+            <li><a href="#math-quiz">Math Quiz</a></li>
+            <li><a href="#games">Games</a></li>
+        </ul>
+    </nav>
+
+    <section id="fun-facts">
+        <h2>🌟 Did You Know?</h2>
+        <p id="fact">Click the button to learn something fun!</p>
+        <button onclick="showFact()">Show Fun Fact</button>
+    </section>
+
+    <section id="math-quiz">
+        <h2>➕ Math Quiz</h2>
+        <p>What is 7 + 5?</p>
+        <input type="number" id="math-answer">
+        <button onclick="checkMath()">Submit</button>
+        <p id="math-result"></p>
+    </section>
+
+    <section id="games">
+        <h2>🎮 Fun Games</h2>
+
+        <div class="game">
+            <h3>🃏 Memory Card Game</h3>
+            <p>Click to flip and match pairs!</p>
+            <button onclick="startMemoryGame()">Play Memory Game</button>
+        </div>
+
+        <div class="game">
+            <h3>✊ Rock-Paper-Scissors</h3>
+            <p>Choose wisely!</p>
+            <button onclick="startRPS()">Play Rock-Paper-Scissors</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bingo | Fun & Learning for Kids</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

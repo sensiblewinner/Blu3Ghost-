@@ -1,0 +1,48 @@
+// Fun Fact Generator
+const facts = [
+    "Honey never spoils!",
+    "Octopuses have three hearts!",
+    "Bananas are berries, but strawberries are not!",
+    "A group of flamingos is called a 'flamboyance'!",
+    "There are more stars in the universe than grains of sand on Earth!"
+];
+
+function showFact() {
+    let randomIndex = Math.floor(Math.random() * facts.length);
+    document.getElementById("fact").innerText = facts[randomIndex];
+}
+
+// Math Quiz
+function checkMath() {
+    let answer = document.getElementById("math-answer").value;
+    let result = (answer == 12) ? "Correct! 😊" : "Oops! Try again. 😔";
+    document.getElementById("math-result").innerText = result;
+}
+
+// Rock-Paper-Scissors Game
+function startRPS() {
+    let choices = ["Rock", "Paper", "Scissors"];
+    let userChoice = prompt("Choose Rock, Paper, or Scissors:").toLowerCase();
+    let computerChoice = choices[Math.floor(Math.random() * choices.length)].toLowerCase();
+
+    let result = "";
+
+    if (userChoice === computerChoice) {
+        result = "It's a tie! 🤝";
+    } else if (
+        (userChoice === "rock" && computerChoice === "scissors") ||
+        (userChoice === "paper" && computerChoice === "rock") ||
+        (userChoice === "scissors" && computerChoice === "paper")
+    ) {
+        result = You Win! 🎉 (${userChoice} beats ${computerChoice});
+    } else {
+        result = You Lose! 😔 (${computerChoice} beats ${userChoice});
+    }
+
+    alert(result);
+}
+
+// Memory Card Game (Simple Alert Version)
+function startMemoryGame() {
+    alert("Memory Card Game is coming soon! 🎴 Stay tuned.");
+}
